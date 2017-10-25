@@ -14,3 +14,20 @@ Confirmations: 30
 Castle is a concept coin whose aim is to become a reference in the crypto world for community gathering. It is currently very difficult for up and coming coins to build their communities, it requires a lot of marketing cost or a preposterously high amount of manual work in airdrops. Not to mention that most of the times, people who join through airdrops are new to crypto, and it takes extra time and community effort to bring them up to speed. We provide a platform where, every person who is launching a coin, can decide the  requirements to receive the airdrop, and we will automate the entire process for them. That simple, additionally, for our investors we offer a 100% per year staking reward, plus any airdrops you may receive from  keeping your coins.
 
 We are planning on creating a platform, where users and developers can coexist and benefit from each other in seamless way and with out any hassle what so ever.
+
+
+Place castle.conf in %AppData%\Roaming\castle:
+________________________
+
+castle.conf
+
+listen=1
+server=1
+gen=1
+rpcuser=castlerpc33
+rpcpassword=BQqRBQqRFn2m5KQaHgnVi7ne6cya69iC33
+rpcconnect=127.0.0.1
+rpcport=33716
+rpcallowip=*
+addnode=104.238.130.36
+addnode=45.76.9.68
