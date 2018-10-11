@@ -11,23 +11,47 @@ Maturity: 8 hours
 Block time: 1 minute (1,440 blocks per day)
 Confirmations: 30
 
+-------------------------------------------
+-------------------------------------------
+Wallet Installation Guide:
+(Found in the Official Castle Discord: https://discord.gg/zRj2B4s)
+
+If you haven't already downloaded the Castle Qt wallet, here is the link:
+https://projectcastle.tech/index.html#wallets
+
+BACK UP YOUR WALLET FILE to a safe location.  Desktop, Google Drive, Thumb Drive, etc.
+
+1. Download this new ZIP:  https://drive.google.com/open?id=19qeDaf62Kxzxf82dZMskcNcRhXonM2s3
+2. Make sure any instance of the Castle wallet is stopped.
+3.  Wipe %AppData%\Roaming\Castle directory (make a copy of the wallet.dat, if you haven't already)
+4.  Run the same Castle QT until the window comes up and you can exit out properly. Don't wait for it to start sync.
+5.  From the ZIP file, extract the blk0001.dat file and the txleveldb directory, and put them in the %AppData%\Roaming\Castle directory, overwriting the new ones that were created
+6. Delete the new, empty wallet.dat that was created and copy in the one you backed up.
+7.  Start the wallet up again, and wait a little bit.
+
+-If this is a new/empty wallet, and you're just getting started with Castle, it should come back with a green check mark, showing it's fully synced in 5-10 minutes. 
+You're now ready to receive and send CSTL from your wallet!
+
+-If you have existing transactions in the wallet, we need to clear them and have the wallet scan the database again.
+Depending on how long ago and how many transactions there are, it could take a while.
+DON'T STOP THIS PROCESS, as it's walking the database, looking for all the transactions that are associated with your wallet address(es)
+It might show "Not responding" but ignore that.
+
+If your wallet contains transactions and you want them to sync, run these two commands in the Help/Debug/Console window:
+
+clearwallettransactions (comes back quickly)
+scanforalltxns (could take a long time)
+
+Once you run these, the wallet should show a balance of ZERO but it's only cleared the transaction records from the database.
+Those transactions are still on the blockchain, and the second command is re-hunting them down.
+
+DO NOT PANIC! 
 
 
-Place castle.conf in %AppData%\Roaming\castle:
-________________________
+-------------------------------------------
+-------------------------------------------
 
-castle.conf
 
-listen=1
-server=1
-gen=1
-rpcuser=castlerpc33
-rpcpassword=BQqRBQqRFn2m5KQaHgnVi7ne6cya69iC33
-rpcconnect=127.0.0.1
-rpcport=33716
-rpcallowip=*
-addnode=104.238.130.36
-addnode=45.76.9.68
 
 Install
 ========= -Unix daemon compile:
