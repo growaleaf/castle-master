@@ -31,3 +31,21 @@ rpcport=33716
 rpcallowip=*
 addnode=104.238.130.36
 addnode=45.76.9.68
+
+Install
+========= -Unix daemon compile:
+cd castle-master
+
+sudo sh install-dependencies.sh install
+
+cd src/leveldb
+
+chmod +x build_detect_platform
+
+make clean && make libleveldb.a libmemenv.a
+
+cd ..
+
+make -f makefile.unix 
+
+If your processor has 4 cores in this case compilatio you can run this: make -j4 -f makefile.unix
