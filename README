@@ -69,4 +69,4 @@ cd ..
 
 make -f makefile.unix 
 
-If your processor has 4 cores in this case compilatio you can run this: make -j4 -f makefile.unix
+If your processor has 4 cores for compiling, you can run this: make -j4 -f makefile.unix
