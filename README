@@ -21,7 +21,7 @@ https://projectcastle.tech/index.html#wallets
 
 BACK UP YOUR WALLET FILE to a safe location.  Desktop, Google Drive, Thumb Drive, etc.
 
-1. Download this new ZIP:  https://drive.google.com/open?id=19qeDaf62Kxzxf82dZMskcNcRhXonM2s3
+1. Download this new ZIP:  https://drive.google.com/open?id=1R5prc2bSITtu1qjNaAfOzTF8hGY5pDtV
 2. Make sure any instance of the Castle wallet is stopped.
 3.  Wipe %AppData%\Roaming\Castle directory (make a copy of the wallet.dat, if you haven't already)
 4.  Run the same Castle QT until the window comes up and you can exit out properly. Don't wait for it to start sync.
